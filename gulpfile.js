@@ -3,7 +3,7 @@ concat = require('gulp-concat'),
 fs = require('fs'),
 http = require('http');
 
-var src = ['http://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.js', 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', 'http://cdnjs.cloudflare.com/ajax/libs/qunit/1.16.0/qunit.min.js'];
+var src = ['http://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.js', 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js']; //, 'http://cdnjs.cloudflare.com/ajax/libs/qunit/1.16.0/qunit.min.js'];
 var len = 0;
 
 
