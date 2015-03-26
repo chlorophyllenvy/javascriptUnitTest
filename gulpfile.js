@@ -1,11 +1,31 @@
 var gulp = require('gulp'),
 concat = require('gulp-concat'),
 fs = require('fs'),
-http = require('http');
+http = require('http'),
+karma = reuquire('gulp-karma');
+
+var testFiles = [
+	'tests/spec.js'
+  'src/js/zonload.js'
+];
 
 var src = ['http://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.6.0/webcomponents.js', 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', 'http://cdnjs.cloudflare.com/ajax/libs/qunit/1.16.0/qunit.min.js'];
 var len = 0;
 
+
+
+gulp.task('test', function() {
+  // Be sure to return the stream 
+  return gulp.src(testFiles)
+    .pipe(karma({
+      configFile: 'my.config.js', // 'karma.conf.js',
+      action: 'run'
+    }))
+    .on('error', function(err) {
+      // Make sure failed tests cause gulp to exit non-zero 
+      throw err;
+    });
+});
 
 
 src.forEach(function(el, index, array){
