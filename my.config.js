@@ -65,7 +65,7 @@ module.exports = function(config) {
     //     }
     // }
 
-    browsers: ['Chrome', 'Firefox', 'IE'],
+    browsers: ['Chrome', 'Firefox'],
 
 
     // Continuous Integration mode
