@@ -1,6 +1,11 @@
 describe("First spec", function() {
+
+  beforeEach(function(){
+    a();
+  })
+
 	it("has a spec with an expectation", function(){
-		expect(true).toBe(true);
+		expect(a).toBe(true);
 	})
 })
 

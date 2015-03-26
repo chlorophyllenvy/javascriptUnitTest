@@ -1,1 +1,3 @@
-a = true;
+function a() {
+	a = true;
+};
