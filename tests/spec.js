@@ -1,6 +1,6 @@
 describe("First spec", function() {
 	it("has a spec with an expectation", function(){
-		expect(a).toBe(true);
+		expect(true).toBe(true);
 	})
 })
 
