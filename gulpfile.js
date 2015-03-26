@@ -2,10 +2,10 @@ var gulp = require('gulp'),
 concat = require('gulp-concat'),
 fs = require('fs'),
 http = require('http'),
-karma = reuquire('gulp-karma');
+karma = require('gulp-karma');
 
 var testFiles = [
-	'tests/spec.js'
+	'tests/spec.js',
   'src/js/zonload.js'
 ];
 
