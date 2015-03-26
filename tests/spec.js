@@ -1,8 +1,12 @@
 describe("First spec", function() {
 
   beforeEach(function(){
-    a();
+    horatio();
   })
+
+  // it("expects x to be true", function(){
+  //   expect(sorta).toBe(true);
+  // })
 
 	it("has a spec with an expectation", function(){
 		expect(a).toBe(true);
@@ -19,6 +23,14 @@ describe("The 'toBe' matcher compares with ===", function() {
   });
 
 });
+
+
+describe("a form test", function(){
+  it("should check fields and validate", function(){
+    expect(emailCheck('t@z.gov')).toBe(true);
+    expect(emailCheck('asdfasdf.gov')).not.toBe(false);
+  })
+})
 
 
 describe("Included matchers:", function() {
