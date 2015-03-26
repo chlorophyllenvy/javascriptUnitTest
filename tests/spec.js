@@ -28,7 +28,7 @@ describe("The 'toBe' matcher compares with ===", function() {
 describe("a form test", function(){
   it("should check fields and validate", function(){
     expect(emailCheck('t@z.gov')).toBe(true);
-    expect(emailCheck('asdfasdf.gov')).not.toBe(false);
+    expect(emailCheck('asdfasdf.gov')).not.toBe(true);
   })
 })
 
