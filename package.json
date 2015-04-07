@@ -19,6 +19,7 @@
   "author": "BeSentient",
   "license": "MIT",
   "dependencies": {
+    "brfs": "^1.4.0",
     "fs": "0.0.2",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
@@ -31,9 +32,13 @@
     "webcomponents": "^0.1.4"
   },
   "devDependencies": {
+    "browserify": "^9.0.3",
+    "browserify-fs": "^1.0.0",
+    "css-validator": "^0.5.1",
     "karma-firefox-launcher": "^0.1.4",
     "karma-ie-launcher": "^0.1.5",
     "karma-qunit": "^0.1.4",
-    "qunitjs": "^1.17.1"
+    "qunitjs": "^1.17.1",
+    "w3cjs": "^0.2.0"
   }
 }
